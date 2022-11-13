@@ -1,0 +1,56 @@
+about_us_tab <- argonTabItem(
+  tabName = "about_us",
+  argonDashHeader(
+    gradient = TRUE,
+    color = "default",
+    top_padding = 8,
+    bottom_padding = 8,
+    argonRow(
+      width = 12,
+      argonCard(
+        width = 7,
+        status = "success",
+        border_level = 0,
+        hover_shadow = TRUE,
+        argonH1("About the App", display = 4),
+        p(style="text-align: justify;", strong("The Power NBA Analytics application is created by a group of students from the DBA3702 (Descriptive Analytics with R) module in the National University of Singapore.")),
+        p(style="text-align: justify;", strong("Our App with its simple layout alows anyone from commentators to managers to get a better insight into their favourite teams and players")),
+        p(style="text-align: justify;", strong("Besides getting insights, we also designed a simple and clean user interface, to allow for ease of usage.")),
+        p(style="text-align: justify;", strong("The app consists of 5 unique visualisations that help users to better understand their favourite team or players based on various metrics")),
+        p(strong('Enjoy using our application!'))
+      ),
+      argonCard(
+        width = 5,
+        status = "success",
+        border_level = 0,
+        hover_shadow = TRUE,
+        argonH1("How To Use", display = 4),
+        "There are only a few things you will need to take note in order to use the platform efficiently.",
+        br(), br(),
+        strong("Team Win Rates Comparison"),
+        p(style="text-align: justify;", strong("Select one team from the drop down list and a visualisation of comparison with NBA average will be presented")),
+        p(style="text-align: justify;", strong("Hover your mouse over the point in the season id to better see the actual average win rates ")),
+        #p(style="text-align: justify;", strong("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum consequat nibh vitae dignissim. Integer sollicitudin nec purus vel hendrerit. Duis varius nisl sit amet vehicula accumsan. Praesent ac dui eget lacus rhoncus posuere.")),
+        br(),
+        strong("Team Performance Against NBA"),
+        p(style="text-align: justify;", strong("Select one team from the drop down list and do the same for the other team")),
+        #p(style="text-align: justify;", strong('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum consequat nibh vitae dignissim. Integer sollicitudin nec purus vel hendrerit. Duis varius nisl sit amet vehicula accumsan. Praesent ac dui eget lacus rhoncus posuere.')),
+        br(),
+        strong("Weighted Ranks within Team"),
+        p(style="text-align: justify;", strong("Select one team from the drop down list and do the same for the other team")),
+        p(style="text-align: justify;", strong("Enter the weightage of how important you think the Field Goal,3 Pointers,Free Throw Points, Rebounds per minute,Assists per minute,Steals per minute and Blocks per minute and Points per min are.")),
+        p(style="text-align: justify;", strong("Note they should all add up to 1")),
+        br(),
+        strong("Player Statistics Within Team"),
+        p(style="text-align: justify;", strong("Select one team from the drop down list ")),
+        p(style="text-align: justify;", strong("Enter the Metric you want to display")),
+        p(style="text-align: justify;", strong("Use the Slider to decide what percentile you want look at for underperforming players")),
+        br(),
+        strong("Player Valuations"),
+        p(style="text-align: justify;", strong("Enter the weightage of how important you think the Field Goal,3 Pointers,Free Throw Points, Rebounds per minute,Assists per minute,Steals per minute and Blocks per minute and Points per min are.")),
+        p(style="text-align: justify;", strong("Note they should all add up to 1")),
+        br(),
+      )
+    )  
+  )
+)
