@@ -14,9 +14,9 @@ about_us_tab <- argonTabItem(
         hover_shadow = TRUE,
         argonH1("About the App", display = 4),
         p(style="text-align: justify;", strong("The Power NBA Analytics application is created by a group of students from the DBA3702 (Descriptive Analytics with R) module in the National University of Singapore.")),
-        p(style="text-align: justify;", strong("Our App with its simple layout alows anyone from commentators to managers to get a better insight into their favourite teams and players")),
+        p(style="text-align: justify;", strong("Our application with its simple layout allows commentatorsto get a better insight into their favourite teams and players")),
         p(style="text-align: justify;", strong("Besides getting insights, we also designed a simple and clean user interface, to allow for ease of usage.")),
-        p(style="text-align: justify;", strong("The app consists of 5 unique visualisations that help users to better understand their favourite team or players based on various metrics")),
+        p(style="text-align: justify;", strong("The application consists of 5 unique visualisations that help users to better understand their favourite team or players based on various metrics")),
         p(strong('Enjoy using our application!'))
       ),
       argonCard(

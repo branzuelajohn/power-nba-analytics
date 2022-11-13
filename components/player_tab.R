@@ -14,6 +14,7 @@ player_tab <- argonTabItem(
           border_level = 0,
           hover_shadow = TRUE,
           argonH1("Weighted Ranks within Team", display = 4),
+          p(strong("Do note that a higher rank (which is denoted by smaller number) correlates to better performance")),
           sidebarLayout(sidebarPanel(helpText("View weighted ranks within the team chosen"),
                                      selectInput(inputId ="teamWeight", 
                                                  label = "Choose a Team to display",
@@ -44,11 +45,11 @@ player_tab <- argonTabItem(
             status = "primary",
             gradient = TRUE,
             #strong("Weighted"),
-            p(strong("Select one team by clicking the drop down list and do teh same for the other team")),
-            p(strong("Enter the weightage of how important you think the Field goal points,3 Pointers,Full Time Points")),
-            p(strong("Rebounds per minute,Assists per minute,Steals per minute , Blocks per minute and Points per min. Note they should all add up to 1")),
-            p(strong("Below the lower band: Crypto is oversold and should rebound.")),
-            p(strong("Above the upper band: Crypto is overbought and is due for a pullback.")),tags$head(tags$style("#window .modal-footer{margin:auto}
+            p(strong("Select one team by clicking the drop down list and do the same for the other team")),
+            p(strong("Enter the weightage of how important you think the Field goal points,3 Pointers,Free Throw Points, Rebounds per minute ,Assists per minute,Steals per minute , Blocks per minute and Points per min.")),
+            p(strong("Note they should all add up to 1")),
+            p(strong("Do note that a higher rank (which is denoted by smaller number) correlates to better performance"))
+            ,tags$head(tags$style("#window .modal-footer{margin:auto}
                                        .modal-header .close{display:none}"))
           )
           
